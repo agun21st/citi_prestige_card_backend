@@ -4,9 +4,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ToolsController;
 use App\Http\Controllers\BrandsController;
+use App\Http\Controllers\OffersController;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\LocationsController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\DepartmentsController;
 use App\Http\Controllers\EnrollmentsController;
@@ -68,8 +70,12 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::resource('courses', CoursesController::class);
     // Categories Route
     Route::resource('categories', CategoriesController::class);
-    // Sub Categories Route
+    // Brands Route
     Route::resource('brands', BrandsController::class);
+    // Locations Route
+    Route::resource('locations', LocationsController::class);
+    // Offers Route
+    Route::resource('offers', OffersController::class);
     // Tools Route
     Route::resource('tools', ToolsController::class);
     Route::get('/tools-subCategories/{id}', [ToolsController::class, 'getSubCategories']);

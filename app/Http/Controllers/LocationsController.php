@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Brand;
 use App\Models\Category;
+use App\Models\Location;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
-class BrandsController extends Controller
+class LocationsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +18,8 @@ class BrandsController extends Controller
     public function index()
     {
         $categories = Category::all();
-        $brands = Brand::with('category')->get();
-        return response()->json(['categories' => $categories, 'brands' => $brands], 200);
+        $locations = Location::with(['category','brand'])->get();
+        return response()->json(['categories' => $categories,'locations' => $locations], 200);
     }
 
     /**
@@ -40,19 +41,21 @@ class BrandsController extends Controller
     public function store(Request $request)
     {
         $validated = Validator::make($request->all(),[
-            "name"  => 'required|max:255|unique:brands',
+            "name"  => 'required|max:255|unique:locations',
             "category_id" => 'required|exists:categories,id',
+            "brand_id" => 'required|exists:brands,id',
         ],);
         if ($validated->fails())
         {return $validated->errors();}
 
-        $brand = Brand::create([
+        $location = Location::create([
             'name' => request()->name,
             'category_id' => request()->category_id,
+            'brand_id' => request()->brand_id,
             'created_by' => request()->user()->id
         ]);
-        $brands = Brand::with('category')->get();
-        return response()->json(["success" => "Brand Added Successfully",'brands'=>$brands], 201);
+        $locations = Location::with(['category','brand'])->get();
+        return response()->json(["success" => "Location Added Successfully",'locations'=>$locations], 201);
     }
 
     /**
@@ -63,8 +66,7 @@ class BrandsController extends Controller
      */
     public function show($id)
     {
-        $brands = Brand::where('category_id',$id)->get();
-        return response()->json(['brands'=>$brands], 200);
+        //
     }
 
     /**
@@ -88,21 +90,23 @@ class BrandsController extends Controller
     public function update(Request $request, $id)
     {
         $validated = Validator::make($request->all(),[
-            "name"  => 'required|max:255|unique:brands,name,'.$id,
+            "name"  => 'required|max:255|unique:locations,name,'.$id,
             "category_id" => 'required|exists:categories,id',
+            "brand_id" => 'required|exists:brands,id',
         ],);
         if ($validated->fails())
         {return $validated->errors();}
 
-        $checkBrand = Brand::find($id);
-        if($checkBrand){
-            $updateBrand = $checkBrand->update([
+        $checkLocation = Location::find($id);
+        if($checkLocation){
+            $updateLocation = $checkLocation->update([
                 'name' => request()->name,
                 'category_id' => request()->category_id,
+                'brand_id' => request()->brand_id,
             ]);
         }
-        $brands = Brand::with('category')->get();
-        return response()->json(["success" => "Brand Updated Successfully",'brands'=>$brands], 201);
+        $locations = Location::with(['category','brand'])->get();
+        return response()->json(["success" => "Location Added Successfully",'locations'=>$locations], 201);
     }
 
     /**
