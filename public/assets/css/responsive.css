@@ -1,0 +1,739 @@
+/* ========Extra small start======== */
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+    .mid {
+        display: none;
+    }
+    .header h4 {
+        font-size: 35px;
+    }
+    .header p {
+        width: 100%;
+    }
+    /* =========nav bar start========== */
+    nav button span {
+        color: #fff;
+        font-size: 25px;
+        margin-top: 12px;
+    }
+    nav a img {
+        width: 90%;
+    }
+    nav ul {
+        background: #181818;
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 8px;
+    }
+    nav .button {
+        position: absolute;
+        bottom: 24px;
+        left: 18px;
+        width: 88%;
+    }
+    nav .button a {
+        display: none;
+    }
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 transparent;
+    }
+    /* =========nav bar end========== */
+    /* =========banner start========== */
+    #banner-part {
+        padding-bottom: 343px;
+    }
+    #banner-part h1 {
+        font-size: 34px;
+        line-height: 52px;
+    }
+    #banner-part h1 span {
+        display: inline-block !important;
+    }
+    #banner-part p {
+        width: 100%;
+    }
+    #banner-part .select-part {
+        bottom: 120px;
+        left: 16px;
+        width: 90%;
+    }
+    #banner-part .select-part select {
+        width: 100%;
+    }
+    #banner-part .select-part input {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #banner-part .select-part button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    /* =========banner end========== */
+    /* =========selection start========== */
+    #selection-part {
+        padding: 15px;
+    }
+    #selection-part .select-part select {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #selection-part .select-part input {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #selection-part .select-part button {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    #selection-part .success-part .item {
+        margin-top: 40px;
+    }
+    #selection-part .success-part .item h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    /* =========selection end========== */
+    /* =========discount start========== */
+    #discount-part .discount-item .inner-item {
+        margin-top: 30px;
+    }
+    /* =========discount end========== */
+    /* =========brand start========== */
+    #brand-part .buttons {
+        display: initial !important;
+    }
+    #brand-part .buttons button {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #brand-part .mix-item {
+        width: 100%;
+    }
+    /* =========brand end========== */
+    /* =========about start========== */
+    #about-part .item p {
+        width: 100%;
+    }
+    #about-part .light {
+        margin-top: 72px !important;
+    }
+    #about-part .light img {
+        width: 38%;
+        margin-left: 230px;
+    }
+    #about-part .item .detail p {
+        width: 100%;
+    }
+    #about-part .img {
+        top: 58%;
+        left: 50%;
+    }
+    #about-part .item a {
+        font-size: 28px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+    }
+    #about-part .item a::after {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+    /* =========about end========== */
+    /* =========review start========== */
+    #review-part .left .mini2 {
+        top: -122px;
+        left: 100px;
+    }
+    #review-part .left .mini3 {
+        top: -33px;
+        left: 240px;
+    }
+    #review-part .left .mini4 {
+        top: 275px;
+    }
+    #review-part .left .icon {
+        bottom: -25px;
+        right: 37px;
+    }
+    #review-part .text-slider {
+        margin-top: 80px;
+    }
+    #review-part .text-slider .text p {
+        width: 100%;
+    }
+    /* =========review end========== */
+    /* =========question start========== */
+    #question-part .accordion-button h5 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    /* =========question end========== */
+    /* =========inbox start========== */
+    #inbox-part {
+        padding-bottom: 100px;
+    }
+    #inbox-part form input {
+        width: 100%;
+    }
+    #inbox-part form button {
+        top: 340px;
+        right: 8px;
+        width: 95%;
+    }
+    /* =========inbox end========== */
+    /* =========footer start========== */
+    #footer-part .links {
+        margin-top: 35px;
+    }
+    /* =========footer end========== */
+}
+
+
+/* ========Extra small end======== */
+
+
+/* ========Small start======== */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .big {
+        display: none;
+    }
+    .mid {
+        display: block;
+    }
+    .header p {
+        width: 100%;
+    }
+    /* =========nav bar start========== */
+    nav button span {
+        color: #fff;
+        font-size: 25px;
+        margin-top: 12px;
+    }
+    nav ul {
+        background: #181818;
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 8px;
+    }
+    nav .button {
+        display: none;
+    }
+    /* =========nav bar end========== */
+    /* =========banner start========== */
+    #banner-part {
+        padding-bottom: 404px;
+    }
+    #banner-part h1 {
+        font-size: 34px;
+        line-height: 52px;
+    }
+    #banner-part h1 span {
+        display: inline-block !important;
+    }
+    #banner-part p {
+        width: 100%;
+    }
+    #banner-part .select-part {
+        bottom: 160px;
+        left: 28px;
+        width: 90%;
+    }
+    #banner-part .select-part select {
+        width: 100%;
+    }
+    #banner-part .select-part input {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #banner-part .select-part button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    /* =========banner end========== */
+    /* =========selection start========== */
+    #selection-part .select-part {
+        margin-top: 160px;
+        padding: 15px;
+    }
+    #selection-part .select-part select {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #selection-part .select-part input {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #selection-part .select-part button {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    #selection-part .success-part .item {
+        margin-top: 40px;
+    }
+    #selection-part .success-part .item h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    /* =========selection end========== */
+    /* =========discount start========== */
+    #discount-part .discount-item .inner-item {
+        margin-top: 30px;
+    }
+    /* =========discount end========== */
+    /* =========brand start========== */
+    #brand-part .buttons {
+        display: initial !important;
+    }
+    #brand-part .buttons button {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #brand-part .mix-item {
+        width: 100%;
+    }
+    /* =========brand end========== */
+    /* =========about start========== */
+    #about-part .item p {
+        width: 100%;
+    }
+    #about-part .light {
+        margin-top: 72px !important;
+    }
+    #about-part .light img {
+        width: 100%;
+        margin-left: 60px;
+    }
+    #about-part .item .detail p {
+        width: 100%;
+    }
+    #about-part .img {
+        top: 58%;
+        left: 50%;
+    }
+    #about-part .item a {
+        font-size: 28px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+    }
+    #about-part .item a::after {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+    /* =========about end========== */
+    /* =========review start========== */
+    #review-part .text-slider {
+        margin-top: 80px;
+    }
+    #review-part .text-slider .text p {
+        width: 100%;
+    }
+    /* =========review end========== */
+    /* =========question start========== */
+    #question-part .accordion-button h5 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    /* =========question end========== */
+    /* =========inbox start========== */
+    #inbox-part {
+        padding-bottom: 100px;
+    }
+    #inbox-part form input {
+        width: 100%;
+    }
+    #inbox-part form button {
+        top: 214px;
+        right: 25px;
+    }
+    /* =========inbox end========== */
+    /* =========footer start========== */
+    #footer-part .links {
+        margin-top: 35px;
+    }
+    /* =========footer end========== */
+}
+
+
+/* ========Small end======== */
+
+
+/* ========Medium start======== */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .big {
+        display: none;
+    }
+    .header p {
+        width: 100%;
+    }
+    /* =========nav bar start========== */
+    nav button span {
+        color: #fff;
+        font-size: 25px;
+        margin-top: 12px;
+    }
+    nav ul {
+        background: #181818;
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 8px;
+    }
+    nav .button {
+        display: block;
+    }
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 transparent;
+    }
+    /* =========nav bar end========== */
+    /* =========banner start========== */
+    #banner-part {
+        padding-bottom: 452px;
+    }
+    #banner-part h1 {
+        font-size: 45px;
+        line-height: 65px;
+    }
+    #banner-part h1 span {
+        display: inline-block !important;
+    }
+    #banner-part p {
+        width: 100%;
+    }
+    #banner-part .select-part {
+        bottom: 462px;
+        left: 40px;
+        width: 90%;
+    }
+    #banner-part .select-part input {
+        width: 40%;
+    }
+    #banner-part .select-part button {
+        padding: 8px 20px;
+        margin-left: -19px;
+    }
+    /* =========banner end========== */
+    /* =========selection start========== */
+    #selection-part .success-part {
+        margin-top: -300px;
+    }
+    #selection-part .select-part {
+        padding: 25px 15px;
+    }
+    #selection-part .select-part select {
+        width: 21%;
+        margin-right: 24px;
+    }
+    #selection-part .select-part input {
+        width: 45%;
+    }
+    #selection-part .success-part .item {
+        margin-top: 40px;
+    }
+    .big {
+        display: none;
+    }
+    .mid {
+        display: block;
+    }
+    /* =========selection end========== */
+    /* =========discount start========== */
+    #discount-part .discount-item .inner-item {
+        margin-top: 30px;
+    }
+    #discount-part .discount-item .inner-mid {
+        padding: 43px 35px !important;
+    }
+    /* =========discount end========== */
+    /* =========brand start========== */
+    #brand-part .buttons {
+        display: initial !important;
+    }
+    #brand-part .buttons button {
+        width: 30%;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    #brand-part .mix-item {
+        width: 32%;
+    }
+    .img2 {
+        padding: 49px !important;
+    }
+    .img3 {
+        padding: 57px !important;
+    }
+    .img5 {
+        padding: 47px !important;
+    }
+    .img6 {
+        padding: 52px !important;
+    }
+    .img7 {
+        padding: 62px !important;
+    }
+    /* =========brand end========== */
+    /* =========about start========== */
+    #about-part .item p {
+        width: 100%;
+    }
+    #about-part .light {
+        margin-top: 72px !important;
+    }
+    #about-part .light img {
+        width: 70%;
+        margin-left: 89px;
+    }
+    #about-part .item .detail p {
+        width: 100%;
+    }
+    #about-part .img {
+        top: 58%;
+        left: 50%;
+    }
+    /* =========about end========== */
+    /* =========review start========== */
+    #review-part .left .mini {
+        top: 48px;
+        left: 128px;
+    }
+    #review-part .left .mini2 {
+        top: -122px;
+        left: 264px;
+    }
+    #review-part .left .mini3 {
+        top: -18px;
+        left: 480px;
+    }
+    #review-part .left .mini4 {
+        top: 230px;
+        left: 45px;
+    }
+    #review-part .left .icon {
+        right: 190px;
+    }
+    #review-part .text-slider {
+        margin-top: 80px;
+    }
+    #review-part .text-slider .text p {
+        width: 100%;
+    }
+    /* =========review end========== */
+    /* =========question start========== */
+    #question-part .accordion-button h5 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    /* =========question end========== */
+    /* =========inbox start========== */
+    #inbox-part {
+        padding-bottom: 100px;
+    }
+    #inbox-part form input {
+        width: 100%;
+    }
+    #inbox-part form button {
+        top: 214px;
+        right: 25px;
+    }
+    /* =========inbox end========== */
+    /* =========footer start========== */
+    #footer-part .links {
+        margin-top: 35px;
+    }
+    #footer-part .links ul {
+        margin-left: 80px;
+    }
+    /* =========footer end========== */
+}
+
+
+/* ========Medium end======== */
+
+
+/* ========Large start======== */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .mid {
+        display: none;
+    }
+    #banner-part h1 span {
+        display: inline-block !important;
+    }
+    #banner-part .select-part {
+        bottom: 250px;
+    }
+    #banner-part .select-part input {
+        width: 40%;
+    }
+    #banner-part .select-part select {
+        margin-right: 12px;
+    }
+    #banner-part .select-part button {
+        padding: 8px 26px;
+    }
+    #brand-part .buttons button {
+        font-size: 17px;
+        padding: 8px 22px;
+    }
+    #about-part .item p {
+        width: 100%;
+    }
+    #about-part .img {
+        left: 51%;
+    }
+    #about-part .item .bottom p {
+        width: 100%;
+    }
+    #about-part .item .bottom .light {
+        position: absolute;
+        top: 56%;
+        left: 21px;
+    }
+    #about-part .item .bottom .support {
+        position: absolute;
+        top: 84%;
+        left: 21px;
+    }
+    #review-part .left .mini2 {
+        top: -128px;
+        left: 195px;
+    }
+    #review-part .left .mini3 {
+        top: -18px;
+        left: 344px;
+    }
+    #review-part .left .mini4 {
+        top: 253px;
+        left: 0;
+    }
+    #review-part .left .icon {
+        right: 35px;
+    }
+}
+
+
+/* ========Large end======== */
+
+
+/* ========Extra Large start======== */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .mid {
+        display: none !important;
+    }
+    .select-part button {
+        padding: 8px 36px;
+    }
+    #banner-part .big-circle3 img {
+        width: 82%;
+    }
+    #banner-part .select-part select {
+        margin-right: 23px;
+    }
+    #banner-part .select-part button {
+        padding: 8px 35px;
+    }
+    #brand-part .buttons button {
+        font-size: 17px;
+        padding: 8px 35px;
+    }
+    #about-part .item p {
+        width: 100%;
+    }
+    #about-part .img {
+        left: 51%;
+    }
+    #about-part .item .bottom p {
+        width: 100%;
+    }
+    #about-part .item .bottom .light {
+        position: absolute;
+        top: 56%;
+        left: 21px;
+    }
+    #about-part .item .bottom .support {
+        position: absolute;
+        top: 84%;
+        left: 21px;
+    }
+    #review-part .left .mini2 {
+        top: -128px;
+        left: 195px;
+    }
+    #review-part .left .mini3 {
+        top: -18px;
+        left: 344px;
+    }
+    #review-part .left .mini4 {
+        top: 253px;
+        left: 0;
+    }
+    #review-part .left .icon {
+        right: 35px;
+    }
+}
+
+
+/* ========Extra Large end======== */
+
+
+/* ========XX Large start======== */
+
+@media (max-width: 1400px) {}
+
+
+/* ========XX Large end======== */
+
+@media (max-width:991.98px) {
+    #banner-part .img {
+        margin-top: 0px;
+    }
+    #banner-part .select-part {
+        flex-direction: column;
+    }
+    #banner-part .select-part select {
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:1440px) {
+    #inbox-part form button {
+        right: 100px;
+    }
+}
+
+@media (max-width:1024px) {
+    #inbox-part form button {
+        right: 80px;
+    }
+}
+
+@media (max-width:768px) {
+    #inbox-part form button {
+        right: 35px;
+    }
+}
+
+@media (max-width:425px) {
+    #inbox-part form button {
+        right: 10px;
+    }
+}

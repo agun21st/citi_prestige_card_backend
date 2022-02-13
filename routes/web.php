@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Mail\LoginDetails;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,9 +15,13 @@ use App\Mail\LoginDetails;
 */
 // Route::fallback(function () {return redirect('https://cit.tools/');});
 // Route::any('{query}',function() { return redirect('https://cit.tools/'); })->where('query', '.*');
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// Home Route
+Route::resource('/', HomeController::class);
+Route::post('/search',[HomeController::class,'search']);
+Route::post('/subscribe',[HomeController::class,'subscribe']);
 Route::get('/mail', function () {
     // Mail::to('mhrazib.cit.bd@gmail.com')->send(new LoginDetails());
 });

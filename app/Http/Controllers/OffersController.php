@@ -56,7 +56,7 @@ class OffersController extends Controller
             $createOffer = Offer::create([
                 'category_id' => request()->category_id,
                 'brand_id' => request()->brand_id,
-                'location_id' => request()->location_id?request()->location_id:0,
+                'location_id' => request()->location_id?request()->location_id:1,
                 'title' => request()->title,
                 'discount' => request()->discount,
                 'description' => request()->description,
@@ -136,7 +136,7 @@ class OffersController extends Controller
             $updateOffer = $checkOffer->update([
                 'category_id' => request()->category_id,
                 'brand_id' => request()->brand_id,
-                'location_id' => request()->location_id?request()->location_id:0,
+                'location_id' => request()->location_id?request()->location_id:1,
                 'title' => request()->title,
                 'discount' => request()->discount,
                 'description' => request()->description,
