@@ -44,8 +44,8 @@ class OffersController extends Controller
     public function store(Request $request)
     {
         $validated = Validator::make($request->all(),[
-            "title"  => 'required|max:255|unique:offers',
-            "discount"  => 'required',
+            // "title"  => 'required|max:255|unique:offers',
+            // "discount"  => 'required',
             "category_id" => 'required|exists:categories,id',
             "brand_id" => 'required|exists:brands,id',
         ],);
@@ -56,7 +56,7 @@ class OffersController extends Controller
             $createOffer = Offer::create([
                 'category_id' => request()->category_id,
                 'brand_id' => request()->brand_id,
-                'location_id' => request()->location_id?request()->location_id:1,
+                'location_id' => request()->location_id?request()->location_id:0,
                 'title' => request()->title,
                 'discount' => request()->discount,
                 'description' => request()->description,
@@ -123,8 +123,8 @@ class OffersController extends Controller
     public function update(Request $request, $id)
     {
         $validated = Validator::make($request->all(),[
-            "title"  => 'required|max:255|unique:offers,title,'.$id,
-            "discount"  => 'required',
+            // "title"  => 'required|max:255|unique:offers,title,'.$id,
+            // "discount"  => 'required',
             "category_id" => 'required|exists:categories,id',
             "brand_id" => 'required|exists:brands,id',
         ],);
@@ -136,7 +136,7 @@ class OffersController extends Controller
             $updateOffer = $checkOffer->update([
                 'category_id' => request()->category_id,
                 'brand_id' => request()->brand_id,
-                'location_id' => request()->location_id?request()->location_id:1,
+                'location_id' => request()->location_id?request()->location_id:0,
                 'title' => request()->title,
                 'discount' => request()->discount,
                 'description' => request()->description,
@@ -203,6 +203,18 @@ class OffersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $getOffer = Offer::find($id);
+        if ($getOffer->logo != '' || $getOffer->logo != null) {
+            $imageLocation = str_replace(url('') . '/', '', $getOffer->logo);
+
+            if (File::exists($imageLocation)) {
+                File::delete($imageLocation);
+            }
+        }
+        if($getOffer)
+        {
+            $getOffer->delete();
+        }
+        return response()->json(["success" => "Offer Deleted Successfully"], 201);
     }
 }

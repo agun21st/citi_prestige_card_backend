@@ -176,14 +176,14 @@ nav .button a {
     padding: 20px 50px;
     margin-right: 30px;
     outline: 0;
-    font-size: 20px;
     color: #757575;
     font-weight: 400;
+    font-size: 1rem;
     /* margin-top: 20px; */
 }
 
 #banner-part .select-part select option {
-    font-size: 20px;
+    font-size: 1rem;
     color: #757575;
     font-weight: 400;
 }
@@ -198,7 +198,7 @@ nav .button a {
 }
 
 #banner-part .select-part button {
-    font-size: 20px;
+    font-size: 1rem;
     color: #fff;
     font-weight: 600;
     background: #ff0d00;

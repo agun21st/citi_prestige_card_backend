@@ -65,7 +65,12 @@ class HomeController extends Controller
      */
     public function edit($id)
     {
-        //
+    }
+
+    public function getBrandById($id)
+    {
+        $getBrands = Brand::where("category_id",$id)->get();
+        return response()->json(["success" => $getBrands], 200);
     }
 
     /**

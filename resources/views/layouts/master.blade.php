@@ -15,7 +15,7 @@
         {{-- <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" /> --}}
         <!-- Latest compiled and minified CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="{{asset('assets/css/venobox.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/slick.css')}}">
         {{-- <link rel="stylesheet" href="{{asset('assets/css/all.css ')}}"/> --}}
@@ -168,10 +168,13 @@
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>2 copy passport size photograph</p>
-                                        <p>Photocopy of NID</p>
-                                        <p>Student information (Batch No, Subject, Passing year)</p>
-                                        <p>Employee information (Department, Position, Date of Joining, Status)</p>
+                                        <p>Documents that will be required from you:-</p>
+                                        <ul style="list-style:disc;">
+                                            <li>2 copy passport size photographs</li>
+                                            <li>Photocopy of NID/Birth Certificate</li>
+                                            <li>Student information (Batch No, Subject, Passing year)</li>
+                                            <li>Employee information (Department, Position, Date of Joining, Status)</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +210,7 @@
                                 </h2>
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>The card will automatically activate after 7 days of receiving. After activating, you will get one sms as confirmation of the card.</p>
+                                        <p>The card will automatically activate after 7 days of receiving. After activating, you will get one SMS as confirmation of the card.</p>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +222,7 @@
                                 </h2>
                                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>If you lose the card you should inform CIT about the matter as soon as possible. We will deactivate the card and give you another one with a charge of 500 taka.</p>
+                                        <p>If you lose the card, you should inform CIT about the matter as soon as possible. We will deactivate the card and give you another one with a charge of 500 taka.</p>
                                     </div>
                                 </div>
                             </div>

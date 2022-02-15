@@ -17,11 +17,12 @@ class CreateOffersTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('logo')->nullable();
-            $table->integer('discount')->default(0);
+            // $table->integer('discount')->default(0);
+            $table->longText('discount')->nullable();
             $table->longText('description')->nullable();
-            $table->integer('category_id');
-            $table->integer('brand_id');
-            $table->integer('location_id');
+            $table->foreignId('category_id')->constrained()->onDelete('cascade');
+            $table->foreignId('brand_id')->constrained()->onDelete('cascade');
+            $table->integer('location_id')->default(0);
             $table->integer('created_by');
             $table->string('system_ip')->nullable();
             $table->tinyInteger('status')->unsigned()->default(1);

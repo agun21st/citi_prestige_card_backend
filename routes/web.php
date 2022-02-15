@@ -21,6 +21,7 @@ use App\Http\Controllers\HomeController;
 // Home Route
 Route::resource('/', HomeController::class);
 Route::post('/search',[HomeController::class,'search']);
+Route::get('/get-brand-by-id/{id}',[HomeController::class,'getBrandById']);
 Route::post('/subscribe',[HomeController::class,'subscribe']);
 Route::get('/mail', function () {
     // Mail::to('mhrazib.cit.bd@gmail.com')->send(new LoginDetails());

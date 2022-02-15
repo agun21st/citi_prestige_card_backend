@@ -1,3 +1,30 @@
+$(function() {
+
+    $("#searchByCategory").change(function() {
+        if (this.value != 0) {
+            $.ajax({
+                url: 'get-brand-by-id/' + this.value,
+                type: 'get',
+                success: function(res) {
+                    $("#searchBrands").empty();
+                    var brandList = "<option value=''>Brand</option>";
+                    var addBrand = "";
+                    (res.success).forEach(brand => {
+                        addBrand += `<option value="${brand["id"]}">${brand["name"]}</option>`
+                    });
+                    // console.log(brandList + addBrand);
+                    $("#searchBrands").append(brandList + addBrand);
+                },
+                error: function(err) {
+                    console.log(err);
+                }
+            });
+        } else {
+
+        }
+    });
+});
+
 async function fetchIp() {
     var trackIP = "";
     await fetch('https://api.ipify.org?format=json')

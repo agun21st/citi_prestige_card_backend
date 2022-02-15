@@ -98,13 +98,15 @@
                         <div class="mix-item mix {{str_replace(' ', '-', $offer->category->name)}}">
                             <div class="img"><img class="lozad" data-src="{{$offer->logo}}" alt="{{$offer->brand->name}}" /></div>
                             <div class="text">
-                                <h5>{{$offer->discount}}% off</h5>
+                                @if ($offer->discount!="")
+                                    <h5>{{$offer->discount}}% off</h5>
+                                @endif
                                 <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#myModal{{$offer->id}}">View Details</a>
                             </div>
                         </div>
                         <!-- The Modal -->
                         <div class="modal fade" id="myModal{{$offer->id}}">
-                            <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
                             <div class="modal-content">
                                 <!-- Modal body -->
                                 <div class="modal-body">
@@ -112,7 +114,9 @@
                                     <div class="img text-center">
                                         <img class="lozad" data-src="{{$offer->logo}}" alt="{{$offer->brand->name}}" height="150px"/>
                                     </div>
-                                    <h2 class="text-center text-danger py-3"><strong>Discount</strong>&nbsp;{{$offer->discount}}%</h2>
+                                    @if ($offer->discount!="")
+                                        <h2 class="text-center text-danger py-3"><strong>Discount</strong>&nbsp;{{$offer->discount}}%</h2>
+                                    @endif
                                     <h4 class="mb-3"><span style="border-bottom: 2px solid black">Availing Process:</span></h4>
                                     {!! $offer->description !!}
                                 </div>

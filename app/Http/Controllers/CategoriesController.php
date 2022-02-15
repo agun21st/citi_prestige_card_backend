@@ -38,11 +38,11 @@ class CategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        $validated = Validator::make($request->all(),[
-            "name"  => 'required|max:255|unique:categories',
-        ],);
-        if ($validated->fails())
-        {return $validated->errors();}
+        // $validated = Validator::make($request->all(),[
+        //     "name"  => 'required|max:255|unique:categories',
+        // ],);
+        // if ($validated->fails())
+        // {return $validated->errors();}
 
         $createCategory = Category::create([
             'name' => request()->name,
@@ -84,11 +84,11 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $validated = Validator::make($request->all(),[
-            "name"  => 'required|max:255|unique:categories,name,'.$id,
-        ],);
-        if ($validated->fails())
-        {return $validated->errors();}
+        // $validated = Validator::make($request->all(),[
+        //     "name"  => 'required|max:255|unique:categories,name,'.$id,
+        // ],);
+        // if ($validated->fails())
+        // {return $validated->errors();}
 
         $checkCategory = Category::find($id);
         $updateCategory = $checkCategory->update([
@@ -107,8 +107,10 @@ class CategoriesController extends Controller
     public function destroy($id)
     {
         $getCategory = Category::find($id);
-        $getCategory->delete();
-
+        if($getCategory)
+        {
+            $getCategory->delete();
+        }
         return response()->json(["success" => "Category Deleted Successfully"], 201);
     }
 }

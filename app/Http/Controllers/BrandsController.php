@@ -40,7 +40,7 @@ class BrandsController extends Controller
     public function store(Request $request)
     {
         $validated = Validator::make($request->all(),[
-            "name"  => 'required|max:255|unique:brands',
+            // "name"  => 'required|max:255|unique:brands',
             "category_id" => 'required|exists:categories,id',
         ],);
         if ($validated->fails())
@@ -88,7 +88,7 @@ class BrandsController extends Controller
     public function update(Request $request, $id)
     {
         $validated = Validator::make($request->all(),[
-            "name"  => 'required|max:255|unique:brands,name,'.$id,
+            // "name"  => 'required|max:255|unique:brands,name,'.$id,
             "category_id" => 'required|exists:categories,id',
         ],);
         if ($validated->fails())
@@ -113,6 +113,11 @@ class BrandsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $brand = Brand::find($id);
+        if($brand)
+        {
+            $brand->delete();
+        }
+        return response()->json(["success" => "Brand Deleted Successfully"], 201);
     }
 }

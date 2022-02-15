@@ -41,7 +41,7 @@ class LocationsController extends Controller
     public function store(Request $request)
     {
         $validated = Validator::make($request->all(),[
-            "name"  => 'required|max:255|unique:locations',
+            // "name"  => 'required|max:255|unique:locations',
             "category_id" => 'required|exists:categories,id',
             "brand_id" => 'required|exists:brands,id',
         ],);
@@ -90,7 +90,7 @@ class LocationsController extends Controller
     public function update(Request $request, $id)
     {
         $validated = Validator::make($request->all(),[
-            "name"  => 'required|max:255|unique:locations,name,'.$id,
+            // "name"  => 'required|max:255|unique:locations,name,'.$id,
             "category_id" => 'required|exists:categories,id',
             "brand_id" => 'required|exists:brands,id',
         ],);
@@ -117,6 +117,11 @@ class LocationsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $getLocation = Location::find($id);
+        if($getLocation)
+        {
+            $getLocation->delete();
+        }
+        return response()->json(["success" => "Location Deleted Successfully"], 201);
     }
 }
