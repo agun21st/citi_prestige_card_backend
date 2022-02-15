@@ -24,7 +24,7 @@
                             </div>
                         @endif
                         <h1>
-                            Enjoy Exclusive Discount With<span class="d-block">CIT Prestige Card</span>
+                            Enjoy Exclusive Discount With <span class="d-block">CIT Prestige Card</span>
                         </h1>
                         <!-- mini text -->
                         <p class="text-justify">

@@ -27,6 +27,10 @@ use App\Http\Controllers\SubCategoriesController;
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
+Route::get('/jahangirBhai', function() {
+    return "Hello Jahangir";
+});
+
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/checkUserLoginStatus', [AuthController::class, 'checkUserLoginStatus']);
 // Route::get('/reset-password', [AuthController::class, 'resetPasswordLink'])->name('resetPasswordLink');

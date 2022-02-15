@@ -724,16 +724,46 @@
     #inbox-part form button {
         right: 80px;
     }
+    #banner-part h1 {
+        font-size: 40px;
+    }
 }
 
 @media (max-width:768px) {
     #inbox-part form button {
         right: 35px;
     }
+    #banner-part .select-part select {
+        width: 50%;
+    }
+    #banner-part .select-part button {
+        padding: 16px 20px;
+        margin-left: 0px;
+        width: 300px;
+        /* display: block; */
+    }
+    #banner-part .select-part {
+        bottom: 368px;
+    }
 }
 
 @media (max-width:425px) {
     #inbox-part form button {
         right: 10px;
+    }
+    #banner-part {
+        padding-top: 100px;
+    }
+    .searchPageImg {
+        margin-top: 50px !important;
+    }
+    #banner-part .select-part select {
+        width: 100%;
+    }
+    #banner-part .select-part {
+        bottom: 126px;
+    }
+    #banner-part h1 {
+        font-size: 26px;
     }
 }

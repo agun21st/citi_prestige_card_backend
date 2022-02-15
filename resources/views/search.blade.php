@@ -10,54 +10,33 @@
                 <div class="col-lg-5">
                     <div class="text">
                         <!-- big text -->
+                        @if (session('success_message'))
+                            <div class="alert alert-success alert-dismissible fade show">
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                {{session('success_message')}}
+                            </div>
+                        @endif
+                        {{-- Successful Message Alert with close and fade effect from controller --}}
+                        @if (session('error_message'))
+                            <div class="alert alert-danger alert-dismissible fade show">
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                {{session('error_message')}}
+                            </div>
+                        @endif
                         <h1>
-                            Enjoy Up to 33% Discount With <span>CIT</span>
-                            <span class="d-block">Prestige Card</span>
+                            Enjoy Exclusive Discount With <span class="d-block">CIT Prestige Card</span>
                         </h1>
                         <!-- mini text -->
                         <p class="text-justify">
-                            Take advantage of the incredible Prestige Card powered by Creative IT Institute. Prestige Card holders can avail exclusive discounts from 100+ prominent brands. So unlock the exciting surprises !!
+                            Take advantage of the incredible Prestige Card powered by Creative IT Institute. "Prestige Card holders can avail exclusive discounts from prominent brands connected with creative IT institute"
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="img" style="margin-top: -50px;">
-                        <img src="{{asset('assets/images/banner-img.webp')}}" alt="banner-img" style="width: 50%;">
+                    <div class="img">
+                        <img src="{{asset('assets/images/banner-img.webp')}}" alt="banner-img">
                     </div>
                 </div>
-                {{-- <div class="col-lg-12">
-                    <!-- selection start -->
-                    <form class="" method="post" action="{{ url('/search') }}">
-                        @csrf
-                        <div class="select-part">
-                            <select name="category" id="category">
-                                <option value="0">Category</option>
-                                @foreach ($categories as $category)
-                                <option value="{{$category->id}}">{{$category->name}}</option>
-                                @endforeach
-                            </select>
-                            <!-- **** -->
-                            <select name="brand" id="brand">
-                                <option value="0">Brand</option>
-                                @foreach ($brands as $brand)
-                                <option value="{{$brand->id}}">{{$brand->name}}</option>
-                                @endforeach
-                            </select>
-                            <!-- **** -->
-                            <select name="location" id="location">
-                                <option value="0">Location</option>
-                                @foreach ($locations as $location)
-                                <option value="{{$location->id}}">{{$location->name}}</option>
-                                @endforeach
-                            </select>
-                            <!-- **** -->
-                            <button type="submit" id="searchBtn">
-                                <span class="button__text">Search</span>
-                            </button>
-                        </div>
-                    </form>
-                    <!-- selection end -->
-                </div> --}}
             </div>
         </div>
         <!-- container end -->
