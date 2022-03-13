@@ -3,7 +3,7 @@
     <!--=====================
     banner part start
     ======================-->
-    <section id="banner-part" style="padding-bottom: 0px;">
+    <section id="banner-part" class="search-page" style="padding-bottom: 0px;">
         <!-- container start -->
         <div class="container">
             <div class="row">
@@ -33,9 +33,9 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="img">
+                    {{-- <div class="img">
                         <img src="{{asset('assets/images/banner-img.webp')}}" alt="banner-img">
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@
                 <div class="col-lg-7 col-sm-12 col-md-12">
                     <div class="img item">
                         <img class="lozad" data-src="{{asset('assets/images/about-img.png')}}" alt="">
-                        <a class="my-video-links" data-autoplay="true" data-vbtype="video" href="https://youtu.be/pfVODjDBFxU"><i
+                        <a class="my-video-links" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=A5n21YlzOM4"><i
                 class="fas fa-play"></i></a>
                     </div>
                 </div>

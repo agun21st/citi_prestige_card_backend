@@ -33,9 +33,9 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="img">
+                    {{-- <div class="img">
                         <img src="{{asset('assets/images/banner-img.webp')}}" alt="banner-img">
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-lg-12">
                     <!-- selection start -->
@@ -81,7 +81,7 @@
     <!--=====================
         selection part start
     ======================-->
-    <section id="selection-part">
+    {{-- <section id="selection-part">
         <!-- container start -->
         <div class="container">
             <!-- success part start -->
@@ -163,7 +163,7 @@
             <!-- success part end -->
         </div>
         <!-- container end -->
-    </section>
+    </section> --}}
     <!--=====================
         selection part end 
     ======================-->
@@ -356,7 +356,7 @@
                 <div class="col-lg-7 col-sm-12 col-md-12">
                     <div class="img item">
                         <img class="lozad" data-src="{{asset('assets/images/about-img.png')}}" alt="">
-                        <a class="my-video-links" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=ei-WEg87z_g"><i
+                        <a class="my-video-links" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=A5n21YlzOM4"><i
                 class="fas fa-play"></i></a>
                     </div>
                 </div>

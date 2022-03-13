@@ -104,13 +104,11 @@ nav .button a {
 =============================== */
 
 #banner-part {
-    /* background: url(../images/Banner.svg) no-repeat center; */
-    position: relative;
-    background: url("../images/card1.webp") no-repeat center;
+    background: url(../images/Banner.svg) no-repeat center;
     background-size: cover;
     padding-top: 200px;
-    /* padding-bottom: 300px; */
-    height: 100vh;
+    padding-bottom: 300px;
+    position: relative;
 }
 
 #banner-part h1 {
@@ -147,8 +145,7 @@ nav .button a {
     border-radius: 10px;
     padding: 40px;
     position: absolute;
-    /* bottom: 420px; */
-    bottom: 200px;
+    bottom: 420px;
     /* left: 113px; */
     /* width: 65%; */
     display: flex;
@@ -226,8 +223,7 @@ banner part css end
 }
 
 #selection-part {
-    /* margin-top: -120px; */
-    margin-top: 100px;
+    margin-top: -120px;
     padding-bottom: 60px;
 }
 
@@ -357,6 +353,10 @@ banner part css end
     padding: 60px 0;
 }
 
+#brand-part .buttons {
+    padding: 0 12px
+}
+
 #brand-part .buttons button {
     font-size: 20px;
     color: #707070;
@@ -376,12 +376,12 @@ banner part css end
 #brand-part .items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     margin-top: 50px;
 }
 
 #brand-part .mix-item {
-    width: 32%;
+    width: 31.4%;
+    margin: 0 12px;
     margin-top: -20px;
 }
 

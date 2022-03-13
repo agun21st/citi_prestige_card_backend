@@ -38,7 +38,7 @@
             <div class="container">
                 <!-- img start -->
                 <a class="navbar-brand" href="{{url('/')}}">
-                    <img src="{{asset('assets/images/top-logo.png')}}" alt="logo" />
+                    <img src="{{asset('assets/images/cit_logo.png')}}" alt="logo" height="40" />
                 </a>
                 <!-- img end -->
                 <!-- button -->
@@ -59,7 +59,7 @@
         <!--=====================
             review part start 
         ======================-->
-        <section id="review-part">
+        {{-- <section id="review-part">
             <!-- container start -->
             <div class="container">
                 <!-- header -->
@@ -124,7 +124,7 @@
                 <!-- sliders end -->
             </div>
             <!-- container end -->
-        </section>
+        </section> --}}
         <!--=====================
             review part end 
         ======================-->

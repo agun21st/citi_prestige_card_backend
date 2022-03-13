@@ -714,17 +714,9 @@
     }
 }
 
-@media (max-width:2560px) {
-    .search-page {
-        height: 80vh !important;
-    }
-}
 @media (max-width:1440px) {
     #inbox-part form button {
         right: 100px;
-    }
-    .search-page {
-        height: 65vh !important;
     }
 }
 
@@ -734,9 +726,6 @@
     }
     #banner-part h1 {
         font-size: 40px;
-    }
-    #banner-part .select-part {
-        bottom: 100px;
     }
 }
 
@@ -754,11 +743,7 @@
         /* display: block; */
     }
     #banner-part .select-part {
-        /* bottom: 368px; */
-        bottom: 30px;
-    }
-    #banner-part {
-        background: url(../images/card1.webp);
+        bottom: 368px;
     }
 }
 
@@ -776,11 +761,7 @@
         width: 100%;
     }
     #banner-part .select-part {
-        /* bottom: 126px; */
-        bottom: 40px;
-    }
-    #banner-part {
-        background: url(../images/card1.webp);
+        bottom: 126px;
     }
     #banner-part h1 {
         font-size: 26px;
