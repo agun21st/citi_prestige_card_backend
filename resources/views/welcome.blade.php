@@ -262,7 +262,7 @@
                 @foreach ($offers as $offer)
                     {{-- <div>{{$offer}}</div> --}}
                     <div class="mix-item mix {{str_replace(' ', '-', $offer->category->name)}}">
-                        <div class="img"><img class="lozad" data-src="{{$offer->logo}}" alt="{{$offer->brand->name}}" /></div>
+                        <div class="img"><img class="lozad" data-src="{{asset($offer->logo)}}" alt="{{$offer->brand->name}}" /></div>
                         <div class="text">
                             @if ($offer->discount!="")
                                 <h5>{{$offer->discount}}% off</h5>
@@ -278,7 +278,7 @@
                             <div class="modal-body">
                                 <h5 class="text-center mb-3 font-weight-bold">{{$offer->category->name}}</h5>
                                 <div class="img text-center">
-                                    <img class="lozad" data-src="{{$offer->logo}}" alt="{{$offer->brand->name}}" height="150px"/>
+                                    <img class="lozad" data-src="{{asset($offer->logo)}}" alt="{{$offer->brand->name}}" height="150px"/>
                                 </div>
                                 @if ($offer->discount!="")
                                     <h2 class="text-center text-danger py-3"><strong>Discount</strong>&nbsp;{{$offer->discount}}%</h2>

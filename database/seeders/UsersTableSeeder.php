@@ -3,30 +3,56 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class UsersTableSeeder extends Seeder
 {
+
     /**
-     * Run the database seeds.
+     * Auto generated seed file
      *
      * @return void
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => "Razib",
-            'email' => "mhrazib.cit.bd@gmail.com",
-            'password' => bcrypt('raz0172834621'),
-            'mobile' => "01712834621",
-            'auth_id' => 2,
-        ]);
-        DB::table('users')->insert([
-            'name' => "Admin",
-            'email' => "admin@creativeitinstitute.com",
-            'password' => bcrypt('creativeItInstitute99999'),
-            'mobile' => "",
-            'auth_id' => 1,
-        ]);
+        
+
+        \DB::table('users')->delete();
+        
+        \DB::table('users')->insert(array (
+            0 => 
+            array (
+                'id' => 1,
+                'name' => 'Razib',
+                'email' => 'mhrazib.cit.bd@gmail.com',
+                'password' => '$2y$10$1CCP4MgecepdmYaQ7ytw6u5P7T1BsR0dJKlBQuy8zczaa5ojQMEem',
+                'email_verified_at' => NULL,
+                'mobile' => '01712834621',
+                'image' => NULL,
+                'auth_id' => 2,
+                'system_ip' => NULL,
+                'status' => 1,
+                'remember_token' => NULL,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            1 => 
+            array (
+                'id' => 2,
+                'name' => 'Admin',
+                'email' => 'admin@creativeitinstitute.com',
+                'password' => '$2y$10$mSBqj.2tYdc59efDwWwTKe.3hXDYPOtm/HJqCkQYXbSzvlESpnqeq',
+                'email_verified_at' => NULL,
+                'mobile' => '',
+                'image' => NULL,
+                'auth_id' => 1,
+                'system_ip' => NULL,
+                'status' => 1,
+                'remember_token' => NULL,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+        ));
+        
+        
     }
 }

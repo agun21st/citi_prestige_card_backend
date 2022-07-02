@@ -12,7 +12,8 @@
         "intervention/image": "^2.6",
         "laravel/framework": "^8.83.0",
         "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "orangehill/iseed": "^3.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
